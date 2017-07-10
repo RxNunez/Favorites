@@ -1,0 +1,16 @@
+.unorderList{
+  display: none;
+}
+#favorites{
+   border: 1px solid black;
+   background-color: lightgray;
+   padding: 2%;
+   color: green;
+
+}
+#inputResults{
+  display: none;
+}
+#newArrayResults{
+  display: none;
+}
