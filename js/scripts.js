@@ -10,10 +10,17 @@ $(document).ready(function() {
     $("#inputResults").show();
     $(".inputs2").text(newInputs);
     $("#newArrayResults").show();
-    $("#item1").text(newInputs[0]);
-    $("#item2").text(newInputs[1]);
-    $("#item3").text(newInputs[2]);
-    $(".unorderList").show();
+    var item = 0;
+    newInputs.forEach(function(newInput){
+      $("#item"+item).text(newInput);
+      item ++;
+      $(".unorderList").show();
+    });
+
+    // $("#item1").text(newInputs[0]);
+    // $("#item2").text(newInputs[1]);
+    // $("#item3").text(newInputs[2]);
+
     // document.write(
     //   "<ul>"
     //   + "<li>" + newInputs[0] + "</li>"
